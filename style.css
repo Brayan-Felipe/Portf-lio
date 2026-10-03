@@ -2,16 +2,14 @@
    ESTILOS GERAIS (DESKTOP)
    ================================================================= */
 
-   body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0F0C1B; 
+    background-color: #0F0C1B;
     color: #e1e1e6;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
 }
-   
-
 
 /* =================================================================
    SEÇÃO: CABEÇALHO (FAIXA DO TOPO)
@@ -52,11 +50,11 @@
     display: inline-block;
     background-color: #8B5CF6;
     color: #f1f1f5;
-    padding: 6px 14px;       
-    font-size: 18px;         
+    padding: 6px 14px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 6px;      
+    border-radius: 6px;
     cursor: pointer;
     border: 1px solid #424248;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -72,7 +70,6 @@
 
 .top {
     margin-top: -77px;
-
 }
 
 /* =================================================================
@@ -88,8 +85,7 @@
     width: 77px;
     height: 77px;
     object-fit: cover;
-    justify-content: end; 
-    margin-left: 100px;
+    justify-content: end;
     border: 2px solid #82828c;
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
@@ -99,22 +95,23 @@
 
 .perfil {
     font-size: 30px;
-    color: #c4c4cc; 
-    margin-top: -80px; 
+    color: #c4c4cc;
+    margin-top: -80px;
     margin-left: 90px;
 }
 
-.apresentacao{
+.apresentacao {
     font-size: 18px;
     text-align: center;
     justify-content: center;
 }
+
 /* =================================================================
    CLASSE UNIVERSAL PARA TEXTOS (MUDA A COR DE QUALQUER TEXTO)
    ================================================================= */
 
 .texto-geral {
-    color: #8B5CF6; /* Podes alterar esta cor para qualquer uma que pretendas usar no teu site */
+    color: #8B5CF6;
 }
 
 /* =================================================================
@@ -140,11 +137,11 @@ a:hover {
     left: 0;
     background-color: #1a1a1e;
     width: 100%;
-    height: 35px; 
+    height: 35px;
     margin: 0;
     border-top: 1px solid #29292e;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
-    font-size: 13px; 
+    font-size: 13px;
     color: #82828c;
     justify-content: center;
     align-items: center;
@@ -152,48 +149,95 @@ a:hover {
     font-weight: normal;
 }
 
-h1, h2, h3,p {
-    color:#787878 ;
-    
+h1,
+h2,
+h3,
+p {
+    color: #787878;
 }
 
 .apresentacao {
     opacity: 0;
     transform: scale(0.5);
     animation: zoomEntrada 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
-  }
-  
-  @keyframes zoomEntrada {
+}
+
+@keyframes zoomEntrada {
     to {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
+}
 
 /* Cor base do título */
 h1 {
-    
-    color: #787878; /* Sua cor cinza */
+    color: #787878;
     font-size: 30px;
-    margin-top: 88px; 
-    margin-left: px;
+    margin-top: 88px;
 }
-  
-  /* Segunda cor para a palavra destacada */
-  .destaque {
-    color: #8B5CF6; /* Seu roxo */
+
+/* Segunda cor para a palavra destacada */
+.destaque {
+    color: #8B5CF6;
     font-size: 30px;
-    margin-top: -88px; 
-    margin-left: 0px;
-  }
+}
 
+.Habilidades {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 88px;
+    text-align: center;
+    /* Garante que o texto fica ao centro */
+}
 
- /* =================================================================
+/* =================================================================
+   SEÇÃO: ÍCONES DE HABILIDADES (LADO A LADO E ANIMAÇÃO DA ESQUERDA)
+   ================================================================= */
+
+.iconshabilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+    animation: vemDaEsquerda 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+ 
+}
+
+.iconshabilidades img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.iconshabilidades img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes vemDaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        /* Começa 100 pixéis mais à esquerda */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Termina na posição normal */
+    }
+}
+
+/* =================================================================
    RESPONSIVIDADE (MEDIA SCREEN PARA TELEMÓVEIS)
    ================================================================= */
 
 @media screen and (max-width: 768px) {
-    
     .faixa-topo {
         height: auto;
         flex-direction: column;
@@ -203,7 +247,7 @@ h1 {
     }
 
     .espaco-vazio {
-        display: none; 
+        display: none;
     }
 
     .faixa-topo p {
@@ -229,7 +273,8 @@ h1 {
     }
 
     .faixafinal {
-        font-size: 11px; 
+        font-size: 11px;
         height: 30px;
     }
 }
+
