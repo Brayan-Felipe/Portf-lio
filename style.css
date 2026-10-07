@@ -182,12 +182,67 @@ h1 {
     font-size: 30px;
 }
 
-.Habilidades {
+.title {
     color: #ffffff;
     font-size: 30px;
     margin-top: 88px;
     text-align: center;
     /* Garante que o texto fica ao centro */
+}
+
+
+
+/* =================================================================
+CARDS projetos
+================================================================= */
+
+
+
+.topics {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 88px;
+    margin-left: 40px;
+}
+
+.fx{    content: "";
+        display: block;
+        position: absolute;
+        width: 120px;
+        height: 0.3rem;
+        border-radius: 2rem;
+        margin-top: 0.8rem;
+        background-color: #8B5CF6;    
+        margin-left: 40px;
+        margin-top: -23px;
+
+}
+
+.cards {
+margin-left: 170px;
+margin-top: 100px;  
+transform: scale(1.03);
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+border-radius: 50px;
+}
+
+.cards img {
+  width: 300px;
+  height: 200px;
+
+}
+
+.pecard {
+    content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 0.3rem;
+        border-radius: 2rem;
+        margin-top: 0.8rem;
+        background-color: #8B5CF6;    
+        margin-top: -7px;
 }
 
 /* =================================================================
